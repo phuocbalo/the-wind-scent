@@ -1,0 +1,63 @@
+{
+  "app": {
+    "title": "The Wind's Scent",
+    "subtitle": "Nông trại sân thượng",
+    "loading": "Đang tải…"
+  },
+  "status": {
+    "online": "Đang có mạng",
+    "offline": "Đang chơi không cần mạng",
+    "offlineReady": "Đã sẵn sàng chơi không cần mạng",
+    "updateReady": "Có bản mới. Mở lại game để cập nhật."
+  },
+  "test": {
+    "heading": "Kiểm tra Sprint 0",
+    "counterLabel": "Giá trị thử",
+    "add": "Cộng 1",
+    "reset": "Về 0",
+    "hint": "Bấm Cộng 1, đóng game rồi mở lại: số phải còn nguyên."
+  },
+  "clock": {
+    "heading": "Giờ trong game",
+    "period": "Buổi: {period}",
+    "morning": "Sáng",
+    "afternoon": "Chiều",
+    "evening": "Tối",
+    "night": "Đêm",
+    "wentBack": "Đồng hồ máy đã bị chỉnh lùi. Giờ trong game vẫn giữ nguyên, không mất tiến độ."
+  },
+  "save": {
+    "heading": "Dữ liệu",
+    "lastSaved": "Lưu lần cuối: {time}",
+    "saving": "Đang lưu…",
+    "ok": "Đã lưu",
+    "failed": "Không lưu được. Hãy xuất bản sao lưu để không mất dữ liệu.",
+    "export": "Xuất bản sao lưu",
+    "import": "Nhập bản sao lưu",
+    "imported": "Đã nhập bản sao lưu",
+    "importFailed": "File không hợp lệ. Dữ liệu hiện tại vẫn giữ nguyên.",
+    "importConfirm": "Nhập file này sẽ thay dữ liệu hiện tại. Tiếp tục?",
+    "delete": "Xoá dữ liệu",
+    "deleteConfirm": "Xoá toàn bộ dữ liệu game trên máy này? Không thể hoàn tác.",
+    "deleted": "Đã xoá dữ liệu",
+    "persisted": "Trình duyệt sẽ giữ dữ liệu của bạn",
+    "notPersisted": "Trình duyệt có thể xoá dữ liệu khi máy đầy. Nên xuất bản sao lưu thường xuyên."
+  },
+  "install": {
+    "button": "Cài vào màn hình chính",
+    "installed": "Đã cài game",
+    "iosTitle": "Cài game trên iPhone",
+    "iosStep1": "1. Mở trang này bằng Safari.",
+    "iosStep2": "2. Bấm nút Chia sẻ (hình vuông có mũi tên lên) ở dưới màn hình.",
+    "iosStep3": "3. Chọn “Thêm vào MH chính”, rồi bấm “Thêm”.",
+    "iosStep4": "4. Mở game từ biểu tượng trên màn hình chính.",
+    "close": "Đóng"
+  },
+  "debug": {
+    "heading": "Công cụ kiểm thử",
+    "version": "Phiên bản: {version}",
+    "saveVersion": "Phiên bản dữ liệu: {version}",
+    "device": "Giờ máy: {time}",
+    "game": "Giờ game: {time}"
+  }
+}

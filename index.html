@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+  <meta name="theme-color" content="#a8d5c2">
+  <meta name="description" content="The Wind's Scent — nông trại sân thượng">
+  <!-- iPhone install (N02) -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="The Wind's Scent">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="icon" href="icons/icon-192.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+  <title>The Wind's Scent</title>
+</head>
+<body>
+  <!-- Portrait game frame, centered on computers (N09) -->
+  <main id="frame" class="frame">
+    <header class="top">
+      <h1 data-t="app.title">The Wind's Scent</h1>
+      <p class="sub" data-t="app.subtitle"></p>
+      <p id="net" class="pill"></p>
+    </header>
+
+    <section class="card">
+      <h2 data-t="test.heading"></h2>
+      <p class="label" data-t="test.counterLabel"></p>
+      <p id="counter" class="big" data-testid="counter">0</p>
+      <div class="row">
+        <button id="add" class="btn primary" data-t="test.add"></button>
+        <button id="reset" class="btn" data-t="test.reset"></button>
+      </div>
+      <p class="hint" data-t="test.hint"></p>
+    </section>
+
+    <section class="card">
+      <h2 data-t="clock.heading"></h2>
+      <p id="gameTime" class="big" data-testid="game-time">--:--</p>
+      <p id="period" class="label"></p>
+      <p id="clockWarn" class="warn" hidden data-t="clock.wentBack"></p>
+    </section>
+
+    <section class="card">
+      <h2 data-t="save.heading"></h2>
+      <p id="saveState" class="label" data-testid="save-state"></p>
+      <p id="persist" class="hint"></p>
+      <div class="row wrap">
+        <button id="export" class="btn" data-t="save.export"></button>
+        <label class="btn">
+          <span data-t="save.import"></span>
+          <input id="import" type="file" accept=".json,application/json" hidden>
+        </label>
+        <button id="delete" class="btn danger" data-t="save.delete"></button>
+      </div>
+    </section>
+
+    <section class="card">
+      <button id="install" class="btn primary wide" hidden data-t="install.button"></button>
+      <button id="iosInstall" class="btn primary wide" hidden data-t="install.iosTitle"></button>
+      <p id="installed" class="hint" hidden data-t="install.installed"></p>
+    </section>
+
+    <!-- Testing tools: removed from the release build (N13) -->
+    <section id="debug" class="card debug" data-dev-only>
+      <h2 data-t="debug.heading"></h2>
+      <p id="dbgVersion"></p>
+      <p id="dbgSave"></p>
+      <p id="dbgDevice"></p>
+      <p id="dbgGame"></p>
+    </section>
+
+    <p id="toast" class="toast" role="status" aria-live="polite"></p>
+  </main>
+
+  <dialog id="iosGuide" class="sheet">
+    <h2 data-t="install.iosTitle"></h2>
+    <p data-t="install.iosStep1"></p>
+    <p data-t="install.iosStep2"></p>
+    <p data-t="install.iosStep3"></p>
+    <p data-t="install.iosStep4"></p>
+    <button class="btn primary wide" data-close data-t="install.close"></button>
+  </dialog>
+
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>

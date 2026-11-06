@@ -1,0 +1,64 @@
+{
+  "_note": "All balance numbers. Values marked TBD are placeholders until the requirement document gives them.",
+  "save": {
+    "autoSaveSeconds": 30,
+    "writeRetries": 3
+  },
+  "clock": {
+    "periods": {
+      "morning": { "startHour": 5 },
+      "afternoon": { "startHour": 11 },
+      "evening": { "startHour": 17 },
+      "night": { "startHour": 20 }
+    }
+  },
+  "farming": {
+    "growthStages": 4,
+    "wateredMinutes": 10,
+    "dryGrowthSpeed": 0.5,
+    "seedTypes": 6,
+    "crops": {
+      "_TBD": "6 crops with grow time, seed price, sell price and XP come from the requirement document in Sprint 1"
+    }
+  },
+  "bag": {
+    "startSlots": 12,
+    "maxPerSlot": 99,
+    "upgradeSlots": 4,
+    "upgradeCount": 3,
+    "upgradeFromLevel": 5
+  },
+  "animals": {
+    "chicken": {
+      "startCount": 2,
+      "feedsPerDay": 1,
+      "eggsPerFeed": 1,
+      "eggAfterMinutes": 120
+    }
+  },
+  "orders": {
+    "visible": 3,
+    "priceMultiplier": 1.6,
+    "swapCost": 0
+  },
+  "rooftop": {
+    "startBoxes": 2,
+    "maxBoxes": 8,
+    "buyBoxesFromLevel": 2
+  },
+  "dust": {
+    "everyDaysMin": 3,
+    "everyDaysMax": 4,
+    "spotsMin": 3,
+    "spotsMax": 4,
+    "coinsPerSweep": 5,
+    "xpPerSweep": 1
+  },
+  "levels": {
+    "max": 10,
+    "_TBD": "XP per level, unlocks and Grandma Tu's gifts come from the requirement document in Sprint 3"
+  },
+  "tutorial": {
+    "maxMinutes": 3
+  }
+}
